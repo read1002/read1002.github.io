@@ -211,61 +211,55 @@
  </ul>
         
 
-		 <!--评论显示区，请插入合适的位置-->
-    <div class="comment"></div>
-
-    <!--载入js，在</body>之前插入即可-->
-    <!--Leancloud 操作库:-->
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <!--Valine 的核心代码库-->
-    <script src="./dist/Valine.min.js"></script>
-    <script>
-        new Valine({
-            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-            av: AV, 
-            el: '.comment',
-            emoticon_url: 'https://cloud.panjunwen.com/alu',
-            emoticon_list: ["吐.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png"],
-            app_id: 'JObiexQ8XtMg7D1STcnFB4av-gzGzoHsz', // 这里填写上面得到的APP ID
-            app_key: 'yejV8CLj43YjcYOhvFQO6o2E', // 这里填写上面得到的APP KEY
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
-        });
+		<!-- livere BEGIN -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNjE0Mi8xMjY3Nw==">
+    <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
     </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- livere END -->
 
-<div id="annie-comment-container" class="theme-annie-comment-main-container">
+ <div id="annie-comment-container" class="theme-annie-comment-main-container">
 
 	
 		
-			<!-- comment valine -->
-			<!-- show valine comment -->
-<div id="valineComment" class="comment"></div>
+			<!-- comment demo -->
+			<style>
+	.clear-left {
+		padding-left: 0;
+	}
+	
+	.clear-right {
+		padding-right: 0;
+	}
+</style>
+<form class="am-form am-g">
+	<fieldset>
+		<div class="am-form-group am-u-sm-4 clear-left">
+			<input type="text" class="" placeholder="name">
+		</div>
+		<div class="am-form-group am-u-sm-4">
+			<input type="email" class="" placeholder="email">
+		</div>
+		<div class="am-form-group am-u-sm-4 clear-right">
+			<input type="text" class="" placeholder="blog">
+		</div>
 
-<!-- valine`s js & css -->
-<script>
-	window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js"><\/script>')
-</script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/js/valine.min.js"></script>
-<link rel="stylesheet" href="/css/comment.css">
+		<div class="am-form-group">
+			<textarea class="" rows="5" placeholder="just go go"></textarea>
+		</div>
 
-<script>
-	var checkExistComment = setInterval(function() {
-		if( $('#valineComment').length ) {
-			new Valine({
-				// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-				av: AV,
-				//使用id寻找div元素（使用class可能找不到）
-				el: '#valineComment',
-				emoticon_url: 'https://cloud.panjunwen.com/alu',
-				emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
-				app_id: "JObiexQ8XtMg7D1STcnFB4av-gzGzoHsz", //获取APP ID
-				app_key: "yejV8CLj43YjcYOhvFQO6o2E", //获取APP KEY
-				placeholder: "no any!", //评论框占位提示文字        			
-			});
-			clearInterval(checkExistComment);
-		}
-	}, 100);
-</script>
+		<p><button type="submit" class="am-btn am-btn-default">发表评论</button></p>
+	</fieldset>
+</form>
 		
 	
 

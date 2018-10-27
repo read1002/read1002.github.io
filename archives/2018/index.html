@@ -38,7 +38,7 @@
 
 <!-- header -->
 
-	<header id="header-bg-2">
+	<header id="header-bg-1" style="background-image: url( /img/1.jpg );">	
 
 	
 		<div id="cd-logo"><a href="/"><img src="/img/logo.jpg" alt="Logo"></a></div>
@@ -62,7 +62,7 @@
 	
 	<!-- others: such as change-bg, time... -->
 	<p class="page-name-other">
-		10/26/2018 
+		10/27/2018 
 		<style type="text/css">
 	header:after {
 		content: '';
@@ -96,7 +96,7 @@
 <script type="text/javascript">
 	function changeHeaderBg(){
 		var random_bg = Math.floor(Math.random() * 109 + 1);
-		var bg = 'url(https://read1002.top/Random-img/' + random_bg + '.jpg)';
+		var bg = 'url(' + random_bg + '.jpg)';
 		$("#header-bg-2").css("background-image", bg);
 	}
 </script>
@@ -647,7 +647,7 @@
 	var random_bg = Math.floor(Math.random() * 109 + 1);
 
 	//var bg = 'url(/img/random/' + random_bg + '.jpg)';		
-	var bg = 'url(https://read1002.top/Random-img/' + random_bg + '.jpg)';
+	var bg = 'url(' + random_bg + '.jpg)';
 
 	$("#header-bg-2").css("background-image", bg);
 </script>
